@@ -1,0 +1,969 @@
+{
+  "query": "harry",
+  "filter": null,
+  "nextPage": "10",
+  "totalCount": 872,
+  "items": [
+    {
+      "id": "248172",
+      "title": "Harry",
+      "originalTitle": "",
+      "type": "single",
+      "description": "Harry – samtaler med prinsen er en portrætbog, hvor forfatteren tager udgangspunkt i sine personlige samtaler med prins Harry. Prinsen åbner op for, hvordan han selv oplevede forældrenes katastrofale ægteskab, sin mors dødsfald, og livet som moderløs knægt, der manglede en guide og derfor blev en rod, der drak og hadede at gå i skole. Nu bruger han kampen mod sine egne dæmoner til at hjælpe andre.",
+      "seriesInfo": null,
+      "authors": [],
+      "narrators": [],
+      "translators": [],
+      "rating": 4.33,
+      "reviewCount": 0,
+      "parts": [],
+      "language": {},
+      "publishers": [],
+      "cover": {},
+      "tags": [],
+      "seriesId": null,
+      "seriesName": null,
+      "orderInSeries": null,
+      "seasonNumber": null,
+      "resultType": "book"
+    },
+    {
+      "id": "14871",
+      "title": "Harry",
+      "originalTitle": "",
+      "type": "single",
+      "description": "A rusted, dented, dirty-white Toyota passes under a streetlight in a small town in Southern Oregon. A hulk of a man exits, leans on a cane, and walks crab-like down the sidewalk toward Ted Whitaker. It's Harry, Ted's best friend from the '60s, a man he hasn't seen in thirty years. Surely this meeting isn't mere coincidence, so what does Harry want with Ted? Ted soon discovers that Harry, once an extreme radical, has become an ecoanarchist and terrorist. He has come to recruit Ted to join his plot to release a virulent form of smallpox with no known antidote. There's no chance of that happening, so it's up to Ted to stop Harry.",
+      "seriesInfo": null,
+      "authors": [
+        {
+          "id": "7766",
+          "name": "Tim Wohlforth"
+        }
+      ],
+      "narrators": [
+        {
+          "id": "1026",
+          "name": "Joe Barrett"
+        }
+      ],
+      "translators": [],
+      "rating": 3.58,
+      "reviewCount": 0,
+      "parts": [
+        {
+          "id": "14871",
+          "title": null,
+          "description": null,
+          "storytelCategoryIds": [
+            "15"
+          ],
+          "majorGenreCodes": [
+            "FH"
+          ],
+          "minorGenreCodes": [
+            "FJ"
+          ],
+          "formats": [
+            {
+              "id": "14871",
+              "isbn": "9781482956436",
+              "type": "abook",
+              "releaseDate": "2014-02-01T00:00:00Z",
+              "enterServiceDate": "2018-03-14T22:12:57Z",
+              "abridged": false,
+              "searchable": true,
+              "edition": "",
+              "isReleased": true,
+              "length": 26711,
+              "cover": {
+                "url": "https://www.storytel.se/images/9781482956436/640x640/cover.jpg",
+                "width": 640,
+                "height": 640
+              },
+              "audioAssets": [
+                {
+                  "id": "233680",
+                  "encoding": "mp3",
+                  "fileId": "7771790",
+                  "durationSeconds": 26711,
+                  "numberOfChannels": 2,
+                  "bitrate": 128000
+                },
+                {
+                  "id": "233669",
+                  "encoding": "mp3",
+                  "fileId": "7771779",
+                  "durationSeconds": 26711,
+                  "numberOfChannels": 1,
+                  "bitrate": 64000
+                }
+              ],
+              "ebookAssets": []
+            }
+          ],
+          "cover": {
+            "url": "https://www.storytel.se/images/9781482956436/640x640/cover.jpg",
+            "width": 640,
+            "height": 640
+          },
+          "episodeNumber": 1,
+          "sttMapAssets": [],
+          "formatAvailability": "abook"
+        }
+      ],
+      "language": {
+        "id": "en",
+        "name": "English"
+      },
+      "publishers": [
+        {
+          "id": "2159",
+          "name": "Blackstone Publishing",
+          "slug": "blackstone-publishing",
+          "type": "abook"
+        }
+      ],
+      "cover": {
+        "url": "https://www.storytel.se/images/9781482956436/640x640/cover.jpg",
+        "width": 640,
+        "height": 640
+      },
+      "tags": [],
+      "seriesId": null,
+      "seriesName": null,
+      "orderInSeries": null,
+      "seasonNumber": null,
+      "resultType": "book"
+    },
+    {
+      "id": "249877",
+      "title": "Harry",
+      "originalTitle": "",
+      "type": "single",
+      "description": "Harry – samtaler med prinsen er en portrætbog, hvor forfatteren tager udgangspunkt i sine personlige samtaler med prins Harry. Prinsen åbner op for, hvordan han selv oplevede forældrenes katastrofale ægteskab, sin mors dødsfald, og livet som moderløs knægt, der manglede en guide og derfor blev en rod, der drak og hadede at gå i skole. Nu bruger han kampen mod sine egne dæmoner til at hjælpe andre.",
+      "seriesInfo": null,
+      "authors": [
+        {
+          "id": "86169",
+          "name": "Angela Levin"
+        }
+      ],
+      "narrators": [],
+      "translators": [
+        {
+          "id": "1930",
+          "name": "Birgitte Brix"
+        }
+      ],
+      "rating": 0,
+      "reviewCount": 0,
+      "parts": [
+        {
+          "id": "249877",
+          "title": null,
+          "description": null,
+          "storytelCategoryIds": [
+            "2"
+          ],
+          "majorGenreCodes": [],
+          "minorGenreCodes": [
+            "DNB",
+            "DNBR"
+          ],
+          "formats": [
+            {
+              "id": "249877",
+              "isbn": "9788793681095",
+              "type": "ebook",
+              "releaseDate": "2018-05-03T00:00:00Z",
+              "enterServiceDate": "2018-05-01T10:55:23Z",
+              "abridged": false,
+              "searchable": true,
+              "edition": "1. ebogsudgave",
+              "isReleased": true,
+              "length": 455820,
+              "cover": {
+                "url": "https://www.storytel.se/images/9788793681095/640x640/cover.jpg",
+                "width": 640,
+                "height": 640
+              },
+              "audioAssets": [],
+              "ebookAssets": [
+                {
+                  "id": "109229",
+                  "encoding": "epub",
+                  "fileId": "1950616",
+                  "characterCount": 455820,
+                  "wordCount": 77809
+                },
+                {
+                  "id": "82400",
+                  "encoding": "epub",
+                  "fileId": "682408",
+                  "characterCount": 455820,
+                  "wordCount": 77809
+                }
+              ]
+            }
+          ],
+          "cover": {
+            "url": "https://www.storytel.se/images/9788793681095/640x640/cover.jpg",
+            "width": 640,
+            "height": 640
+          },
+          "episodeNumber": 1,
+          "sttMapAssets": [],
+          "formatAvailability": "ebook"
+        }
+      ],
+      "language": {
+        "id": "da",
+        "name": "Danish"
+      },
+      "publishers": [
+        {
+          "id": "1058",
+          "name": "Forlaget Memoris",
+          "slug": "forlaget-memoris",
+          "type": "ebook"
+        }
+      ],
+      "cover": {
+        "url": "https://www.storytel.se/images/9788793681095/640x640/cover.jpg",
+        "width": 640,
+        "height": 640
+      },
+      "tags": [],
+      "seriesId": null,
+      "seriesName": null,
+      "orderInSeries": null,
+      "seasonNumber": null,
+      "resultType": "book"
+    },
+    {
+      "id": "95508",
+      "title": "Harry Styles",
+      "originalTitle": "",
+      "type": "single",
+      "description": "Harry Styles er gang på gang blevet kåret som den lækreste fyr i boybandet One Direction. Piger verden over elsker hans smil og søde personlighed. Harry Styles – en biografi er et must for alle One Direction fans, som ønsker at vide lidt mere om Harry Styles. Bogen fortæller hele historien om Harry, hans vej til toppen og livet som superstjerne i verdens bedste boyband. Du får alle detaljer om venskabet med de andre drenge i One Direction, hans kærlighedsliv, og hvad han kigger efter hos pigerne. Vidste du fx, at Harry engang kysset en fan? Og at han har en bedste ven, udover Louis, som ikke er med i One Direction? Om forfatterenSarah Oliver er journalist og forfatter. Hun har tidligere skrevet bogen One Direction Superstjerner fra A-Z og Justin Bieber Superstjerne fra A-Z",
+      "seriesInfo": null,
+      "authors": [
+        {
+          "id": "35607",
+          "name": "Sarah Oliver"
+        }
+      ],
+      "narrators": [],
+      "translators": [],
+      "rating": 5,
+      "reviewCount": 0,
+      "parts": [
+        {
+          "id": "95508",
+          "title": null,
+          "description": null,
+          "storytelCategoryIds": [
+            "2"
+          ],
+          "majorGenreCodes": [
+            "DNB"
+          ],
+          "minorGenreCodes": [
+            "DNB"
+          ],
+          "formats": [
+            {
+              "id": "95508",
+              "isbn": "9788792861917",
+              "type": "ebook",
+              "releaseDate": "2013-06-25T00:00:00Z",
+              "enterServiceDate": "2018-02-24T11:14:48Z",
+              "abridged": false,
+              "searchable": true,
+              "edition": "",
+              "isReleased": true,
+              "length": 183955,
+              "cover": {
+                "url": "https://www.storytel.se/images/9788792861917/640x640/cover.jpg",
+                "width": 640,
+                "height": 640
+              },
+              "audioAssets": [],
+              "ebookAssets": [
+                {
+                  "id": "552938",
+                  "encoding": "epub",
+                  "fileId": "7509389",
+                  "characterCount": 183955,
+                  "wordCount": 32950
+                },
+                {
+                  "id": "409013",
+                  "encoding": "epub",
+                  "fileId": "7015736",
+                  "characterCount": 183955,
+                  "wordCount": 32950
+                }
+              ]
+            }
+          ],
+          "cover": {
+            "url": "https://www.storytel.se/images/9788792861917/640x640/cover.jpg",
+            "width": 640,
+            "height": 640
+          },
+          "episodeNumber": 1,
+          "sttMapAssets": [],
+          "formatAvailability": "ebook"
+        }
+      ],
+      "language": {
+        "id": "da",
+        "name": "Danish"
+      },
+      "publishers": [
+        {
+          "id": "221",
+          "name": "Forlaget Turbulenz",
+          "slug": "forlaget-turbulenz",
+          "type": "ebook"
+        }
+      ],
+      "cover": {
+        "url": "https://www.storytel.se/images/9788792861917/640x640/cover.jpg",
+        "width": 640,
+        "height": 640
+      },
+      "tags": [],
+      "seriesId": null,
+      "seriesName": null,
+      "orderInSeries": null,
+      "seasonNumber": null,
+      "resultType": "book"
+    },
+    {
+      "id": "426564",
+      "title": "Hoodoo Harry",
+      "originalTitle": "",
+      "type": "single",
+      "description": "Hap Collins is a straight, white, liberal, blue-collar tough guy. Leonard Pine is a gay, black, Republican combat veteran. Best friends who've shared a succession of low-wage odd jobs that have gotten them into even odder situations dealing with lowlifes, now the duo delivers their own brand of ass-kicking justice as private investigators. In this brand-new story, a day's fishing lands Hap and Leonard their biggest catch ever: the Rolling Literature bookmobile. A pillar of rural African American communities in East Texas, the renovated school bus vanished fifteen years ago – along with its driver, Harriet Hoodalay, aka Hoodoo Harry – reappearing just in time to crash Leonard's pickup into a creek. Behind the wheel was a twelve-year-old boy who didn't survive the accident. The kid was clearly running scared, but who was he running from and how did he end up in the driver's seat of the missing bookmobile? The first solid lead in a case that started more than a decade earlier with Hoodoo Harry, this mystery of a small town's dark and disturbing past will take all of Hap and Leonard's wits – and fists – to solve.",
+      "seriesInfo": null,
+      "authors": [
+        {
+          "id": "36463",
+          "name": "Joe R. Lansdale"
+        }
+      ],
+      "narrators": [],
+      "translators": [],
+      "rating": 3,
+      "reviewCount": 0,
+      "parts": [
+        {
+          "id": "426564",
+          "title": null,
+          "description": null,
+          "storytelCategoryIds": [
+            "3"
+          ],
+          "majorGenreCodes": [
+            "FF"
+          ],
+          "minorGenreCodes": [],
+          "formats": [
+            {
+              "id": "426563",
+              "isbn": "9781788542371",
+              "type": "ebook",
+              "releaseDate": "2018-12-18T00:00:00Z",
+              "enterServiceDate": "2018-12-10T15:18:25Z",
+              "abridged": false,
+              "searchable": true,
+              "edition": "",
+              "isReleased": true,
+              "length": 77784,
+              "cover": {
+                "url": "https://www.storytel.se/images/9781788542371/640x640/cover.jpg",
+                "width": 640,
+                "height": 640
+              },
+              "audioAssets": [],
+              "ebookAssets": [
+                {
+                  "id": "375531",
+                  "encoding": "epub",
+                  "fileId": "5603300",
+                  "characterCount": 77784,
+                  "wordCount": 14477
+                },
+                {
+                  "id": "375530",
+                  "encoding": "epub",
+                  "fileId": "5602501",
+                  "characterCount": 77784,
+                  "wordCount": 14477
+                }
+              ]
+            }
+          ],
+          "cover": {
+            "url": "https://www.storytel.se/images/9781788542371/640x640/cover.jpg",
+            "width": 640,
+            "height": 640
+          },
+          "episodeNumber": 1,
+          "sttMapAssets": [],
+          "formatAvailability": "ebook"
+        }
+      ],
+      "language": {
+        "id": "en",
+        "name": "English"
+      },
+      "publishers": [
+        {
+          "id": "2586",
+          "name": "Head of Zeus",
+          "slug": "head-of-zeus",
+          "type": "ebook"
+        }
+      ],
+      "cover": {
+        "url": "https://www.storytel.se/images/9781788542371/640x640/cover.jpg",
+        "width": 640,
+        "height": 640
+      },
+      "tags": [],
+      "seriesId": null,
+      "seriesName": null,
+      "orderInSeries": null,
+      "seasonNumber": null,
+      "resultType": "book"
+    },
+    {
+      "id": "249878",
+      "title": "Harry & Meghan",
+      "originalTitle": "",
+      "type": "single",
+      "description": "Harry & Meghan – en kærlighedshistorie fortæller hele eventyret om den fortabte prins, der mistede sin mor, Lady Diana, som 12-årig, men som nu har fundet lykken sammen med en kvinde, der på mange måder minder om Diana. Men samtidig er Meghan kontroversiel. Hun er fraskilt, tre år ældre end Harry og tilmed amerikaner. Uha, uha! Bogen går bag om både Harrys og Meghans opvækst og voksenliv og fortæller, hvordan de fandt kærligheden.",
+      "seriesInfo": null,
+      "authors": [
+        {
+          "id": "41246",
+          "name": "Emily Herbert"
+        }
+      ],
+      "narrators": [],
+      "translators": [
+        {
+          "id": "35806",
+          "name": "Michael Jepsen"
+        }
+      ],
+      "rating": 0,
+      "reviewCount": 0,
+      "parts": [
+        {
+          "id": "249878",
+          "title": null,
+          "description": null,
+          "storytelCategoryIds": [
+            "2"
+          ],
+          "majorGenreCodes": [],
+          "minorGenreCodes": [
+            "DNB",
+            "DNBR"
+          ],
+          "formats": [
+            {
+              "id": "249878",
+              "isbn": "9788793681040",
+              "type": "ebook",
+              "releaseDate": "2018-05-01T00:00:00Z",
+              "enterServiceDate": "2018-05-01T10:55:24Z",
+              "abridged": false,
+              "searchable": true,
+              "edition": "1. ebogsudgave",
+              "isReleased": true,
+              "length": 306104,
+              "cover": {
+                "url": "https://www.storytel.se/images/9788793681040/640x640/cover.jpg",
+                "width": 640,
+                "height": 640
+              },
+              "audioAssets": [],
+              "ebookAssets": [
+                {
+                  "id": "109232",
+                  "encoding": "epub",
+                  "fileId": "1950626",
+                  "characterCount": 306104,
+                  "wordCount": 53132
+                },
+                {
+                  "id": "82402",
+                  "encoding": "epub",
+                  "fileId": "682411",
+                  "characterCount": 306104,
+                  "wordCount": 53132
+                }
+              ]
+            }
+          ],
+          "cover": {
+            "url": "https://www.storytel.se/images/9788793681040/640x640/cover.jpg",
+            "width": 640,
+            "height": 640
+          },
+          "episodeNumber": 1,
+          "sttMapAssets": [],
+          "formatAvailability": "ebook"
+        }
+      ],
+      "language": {
+        "id": "da",
+        "name": "Danish"
+      },
+      "publishers": [
+        {
+          "id": "1058",
+          "name": "Forlaget Memoris",
+          "slug": "forlaget-memoris",
+          "type": "ebook"
+        }
+      ],
+      "cover": {
+        "url": "https://www.storytel.se/images/9788793681040/640x640/cover.jpg",
+        "width": 640,
+        "height": 640
+      },
+      "tags": [],
+      "seriesId": null,
+      "seriesName": null,
+      "orderInSeries": null,
+      "seasonNumber": null,
+      "resultType": "book"
+    },
+    {
+      "id": "248170",
+      "title": "Harry & Meghan",
+      "originalTitle": "",
+      "type": "single",
+      "description": "Harry & Meghan – en kærlighedshistorie fortæller hele eventyret om den fortabte prins, der mistede sin mor, Lady Diana, som 12-årig, men som nu har fundet lykken sammen med en kvinde, der på mange måder minder om Diana. Men samtidig er Meghan kontroversiel. Hun er fraskilt, tre år ældre end Harry og tilmed amerikaner. Uha, uha! Bogen går bag om både Harrys og Meghans opvækst og voksenliv og fortæller, hvordan de fandt kærligheden.",
+      "seriesInfo": null,
+      "authors": [
+        {
+          "id": "41246",
+          "name": "Emily Herbert"
+        }
+      ],
+      "narrators": [
+        {
+          "id": "143",
+          "name": "Randi Winther"
+        }
+      ],
+      "translators": [
+        {
+          "id": "35806",
+          "name": "Michael Jepsen"
+        }
+      ],
+      "rating": 3.78,
+      "reviewCount": 0,
+      "parts": [
+        {
+          "id": "248170",
+          "title": null,
+          "description": null,
+          "storytelCategoryIds": [
+            "2"
+          ],
+          "majorGenreCodes": [],
+          "minorGenreCodes": [
+            "DNB",
+            "DNBR"
+          ],
+          "formats": [
+            {
+              "id": "248170",
+              "isbn": "9788793681071",
+              "type": "abook",
+              "releaseDate": "2018-05-01T00:00:00Z",
+              "enterServiceDate": "2018-04-23T07:14:34Z",
+              "abridged": false,
+              "searchable": true,
+              "edition": "1. lydbogsudgave",
+              "isReleased": true,
+              "length": 20167,
+              "cover": {
+                "url": "https://www.storytel.se/images/9788793681071/640x640/cover.jpg",
+                "width": 640,
+                "height": 640
+              },
+              "audioAssets": [
+                {
+                  "id": "9886",
+                  "encoding": "mp3",
+                  "fileId": "638752",
+                  "durationSeconds": 20167,
+                  "numberOfChannels": 1,
+                  "bitrate": 64000
+                }
+              ],
+              "ebookAssets": []
+            }
+          ],
+          "cover": {
+            "url": "https://www.storytel.se/images/9788793681071/640x640/cover.jpg",
+            "width": 640,
+            "height": 640
+          },
+          "episodeNumber": 1,
+          "sttMapAssets": [],
+          "formatAvailability": "abook"
+        }
+      ],
+      "language": {
+        "id": "da",
+        "name": "Danish"
+      },
+      "publishers": [
+        {
+          "id": "1058",
+          "name": "Forlaget Memoris",
+          "slug": "forlaget-memoris",
+          "type": "abook"
+        }
+      ],
+      "cover": {
+        "url": "https://www.storytel.se/images/9788793681071/640x640/cover.jpg",
+        "width": 640,
+        "height": 640
+      },
+      "tags": [
+        "4550"
+      ],
+      "seriesId": null,
+      "seriesName": null,
+      "orderInSeries": null,
+      "seasonNumber": null,
+      "resultType": "book"
+    },
+    {
+      "id": "253349",
+      "title": "Transforming Harry",
+      "originalTitle": "",
+      "type": "single",
+      "description": "Transforming Harry: The Adaptation of Harry Potter in the Transmedia Age is an edited volume of eight essays that look at how the cinematic versions of the seven Harry Potter novels represent an unprecedented cultural event in the history of cinematic adaptation. The movie version of the first Harry Potter book, Harry Potter and the Sorcerer's Stone, premiered in 2001, in between publication of the fourth and fifth books of this global literary phenomenon. As a result, the production and reception of both novel and movie series became intertwined with one another, creating a fanbase who accessed the series first through the books, first through the movies, and in various other combinations. John Alberti and P. Andrew Miller have gathered scholars to explore and examine the cultural, political, aesthetic, and pedagogical dimensions of this pop culture phenomenon and how it has changed the reception of both the films and books. While the primary focus of the collection is an academic audience, it will appeal to a broad range of listeners. Within the academic community, Transforming Harry will be of interest to scholars and teachers in a number of disciplines, including film and media studies and English.",
+      "seriesInfo": null,
+      "authors": [
+        {
+          "id": "12",
+          "name": "Various Authors"
+        }
+      ],
+      "narrators": [
+        {
+          "id": "11516",
+          "name": "Shaun Grindell"
+        },
+        {
+          "id": "59644",
+          "name": "Esther Wane"
+        }
+      ],
+      "translators": [],
+      "rating": 3.21,
+      "reviewCount": 0,
+      "parts": [
+        {
+          "id": "253349",
+          "title": null,
+          "description": null,
+          "storytelCategoryIds": [
+            "7"
+          ],
+          "majorGenreCodes": [
+            "ATFA"
+          ],
+          "minorGenreCodes": [
+            "ATF",
+            "DS",
+            "DSY",
+            "DSK",
+            "FL",
+            "FM",
+            "JBSF1",
+            "AT",
+            "ATFN"
+          ],
+          "formats": [
+            {
+              "id": "253349",
+              "isbn": "9781684413898",
+              "type": "abook",
+              "releaseDate": "2018-07-31T00:00:00Z",
+              "enterServiceDate": "2018-08-31T08:10:29Z",
+              "abridged": false,
+              "searchable": true,
+              "edition": "",
+              "isReleased": true,
+              "length": 23741,
+              "cover": {
+                "url": "https://www.storytel.se/images/9781684413898/640x640/cover.jpg",
+                "width": 640,
+                "height": 640
+              },
+              "audioAssets": [
+                {
+                  "id": "45095",
+                  "encoding": "mp3",
+                  "fileId": "1514117",
+                  "durationSeconds": 23741,
+                  "numberOfChannels": 2,
+                  "bitrate": 128000
+                },
+                {
+                  "id": "45093",
+                  "encoding": "mp3",
+                  "fileId": "1514043",
+                  "durationSeconds": 23741,
+                  "numberOfChannels": 1,
+                  "bitrate": 64000
+                }
+              ],
+              "ebookAssets": []
+            }
+          ],
+          "cover": {
+            "url": "https://www.storytel.se/images/9781684413898/640x640/cover.jpg",
+            "width": 640,
+            "height": 640
+          },
+          "episodeNumber": 1,
+          "sttMapAssets": [],
+          "formatAvailability": "abook"
+        }
+      ],
+      "language": {
+        "id": "en",
+        "name": "English"
+      },
+      "publishers": [
+        {
+          "id": "2115",
+          "name": "HighBridge",
+          "slug": "highbridge",
+          "type": "abook"
+        }
+      ],
+      "cover": {
+        "url": "https://www.storytel.se/images/9781684413898/640x640/cover.jpg",
+        "width": 640,
+        "height": 640
+      },
+      "tags": [],
+      "seriesId": null,
+      "seriesName": null,
+      "orderInSeries": null,
+      "seasonNumber": null,
+      "resultType": "book"
+    },
+    {
+      "id": "60309",
+      "title": "Great Harry",
+      "originalTitle": "",
+      "type": "single",
+      "description": "In lively, absorbing prose that rivals the finest literary fiction, prize-winning historian Carolly Erickson recreates the life of the notorious Tudor king, Henry VIII. In his youth as a charming national hero, his reign as a monstrous king, and his final days as a tottering old man, Erickson draws a thoroughly convincing portrait of one of English history's most notorious characters.",
+      "seriesInfo": null,
+      "authors": [
+        {
+          "id": "210",
+          "name": "Carolly Erickson"
+        }
+      ],
+      "narrators": [
+        {
+          "id": "13716",
+          "name": "Nelson Runger"
+        }
+      ],
+      "translators": [],
+      "rating": 4.25,
+      "reviewCount": 0,
+      "parts": [
+        {
+          "id": "60309",
+          "title": null,
+          "description": null,
+          "storytelCategoryIds": [
+            "2"
+          ],
+          "majorGenreCodes": [
+            "DNBR"
+          ],
+          "minorGenreCodes": [
+            "NHD",
+            "DNBH",
+            "1DDU"
+          ],
+          "formats": [
+            {
+              "id": "60309",
+              "isbn": "9781456125165",
+              "type": "abook",
+              "releaseDate": "2012-01-06T00:00:00Z",
+              "enterServiceDate": "2018-02-24T01:38:00Z",
+              "abridged": false,
+              "searchable": true,
+              "edition": "",
+              "isReleased": true,
+              "length": 0,
+              "cover": {
+                "url": "https://www.storytel.se/images/9781456125165/640x640/cover.jpg",
+                "width": 640,
+                "height": 640
+              },
+              "audioAssets": [],
+              "ebookAssets": []
+            }
+          ],
+          "cover": {
+            "url": "https://www.storytel.se/images/9781456125165/640x640/cover.jpg",
+            "width": 640,
+            "height": 640
+          },
+          "episodeNumber": 1,
+          "sttMapAssets": [],
+          "formatAvailability": "abook"
+        }
+      ],
+      "language": {
+        "id": "en",
+        "name": "English"
+      },
+      "publishers": [
+        {
+          "id": "6040",
+          "name": "Recorded Books, Inc.",
+          "slug": "recorded-books-inc",
+          "type": "abook"
+        }
+      ],
+      "cover": {
+        "url": "https://www.storytel.se/images/9781456125165/640x640/cover.jpg",
+        "width": 640,
+        "height": 640
+      },
+      "tags": [],
+      "seriesId": null,
+      "seriesName": null,
+      "orderInSeries": null,
+      "seasonNumber": null,
+      "resultType": "book"
+    },
+    {
+      "id": "32316",
+      "title": "Harry and Me",
+      "originalTitle": "",
+      "type": "single",
+      "description": "An out-of-work salesman looking for a job stumbles upon Harry, an orphan who's aged out of the system and is a self-taught musician. After their chance meeting on a forest lane, the two partner up for a new adventure that should be lucrative for both. After all, if one member of their little team has business smarts and the other other has talent, the sky's the limit in what they could achieve. Their first stop? A small village named Hamelin that has a pretty serious rat problem. The two men may have found their first client, but the results of their business venture are about to have some unforseen results. A short story.",
+      "seriesInfo": null,
+      "authors": [
+        {
+          "id": "15319",
+          "name": "Jim Harrington"
+        }
+      ],
+      "narrators": [],
+      "translators": [],
+      "rating": 1,
+      "reviewCount": 0,
+      "parts": [
+        {
+          "id": "32316",
+          "title": null,
+          "description": null,
+          "storytelCategoryIds": [
+            "7"
+          ],
+          "majorGenreCodes": [
+            "FM"
+          ],
+          "minorGenreCodes": [
+            "FL"
+          ],
+          "formats": [
+            {
+              "id": "32316",
+              "isbn": "9781611875478",
+              "type": "ebook",
+              "releaseDate": "2013-04-06T00:00:00Z",
+              "enterServiceDate": "2018-02-23T20:40:24Z",
+              "abridged": false,
+              "searchable": true,
+              "edition": "",
+              "isReleased": true,
+              "length": 10358,
+              "cover": {
+                "url": "https://www.storytel.se/images/9781611875478/640x640/cover.jpg",
+                "width": 640,
+                "height": 640
+              },
+              "audioAssets": [],
+              "ebookAssets": [
+                {
+                  "id": "546243",
+                  "encoding": "epub",
+                  "fileId": "7501853",
+                  "characterCount": 9805,
+                  "wordCount": 1765
+                },
+                {
+                  "id": "400569",
+                  "encoding": "epub",
+                  "fileId": "6995273",
+                  "characterCount": 10358,
+                  "wordCount": 1765
+                }
+              ]
+            }
+          ],
+          "cover": {
+            "url": "https://www.storytel.se/images/9781611875478/640x640/cover.jpg",
+            "width": 640,
+            "height": 640
+          },
+          "episodeNumber": 1,
+          "sttMapAssets": [],
+          "formatAvailability": "ebook"
+        }
+      ],
+      "language": {
+        "id": "en",
+        "name": "English"
+      },
+      "publishers": [
+        {
+          "id": "287",
+          "name": "Untreed Reads",
+          "slug": "untreed-reads",
+          "type": "ebook"
+        }
+      ],
+      "cover": {
+        "url": "https://www.storytel.se/images/9781611875478/640x640/cover.jpg",
+        "width": 640,
+        "height": 640
+      },
+      "tags": [],
+      "seriesId": null,
+      "seriesName": null,
+      "orderInSeries": null,
+      "seasonNumber": null,
+      "resultType": "book"
+    }
+  ]
+}
