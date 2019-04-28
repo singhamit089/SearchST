@@ -81,7 +81,7 @@ public class SearchItemViewModel: SearchItemViewModelType, SearchItemViewModelIn
             guard let self = self else {
                 return Driver.empty()
             }
-            if _isLoading.hashValue == 0 && self.query != "" {
+            if !_isLoading {
                 return API.sharedAPI.searchItem(self.query, page: self.pageIndex)
                         .trackActivity(isLoading).asDriver(onErrorDriveWith: Driver.empty()).flatMap({ [weak self] searchResult -> Driver<[Item]> in
                         guard let self = self else {

@@ -63,9 +63,14 @@ class HomeViewController: UIViewController, UITableViewDelegate {
             .drive(tableView.rx.items(dataSource: dataSource))
             .disposed(by: disposeBag)
         
-        viewModel.isLoading
+        viewModel.isLoading.asDriver(onErrorJustReturn: false).map({ [weak self] isLoading in
+            guard let self = self else {
+                return
+            }
+            
+            self.tableFooterView.isHidden = !isLoading
+        })
             .drive()
-            // .drive(isLoading(for: self.view))
             .disposed(by: disposeBag)
         
         tableView.rx.contentOffset
