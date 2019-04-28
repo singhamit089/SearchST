@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="f9E-fw-rij">
+                                <rect key="frame" x="0.0" y="274" width="414" height="358"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xqS-aY-hqb">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="315"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="storytel_logo" translatesAutoresizingMaskIntoConstraints="NO" id="hos-cI-BLn">
+                                                <rect key="frame" x="57" y="7.5" width="300" height="300"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="4sm-au-iio"/>
+                                                    <constraint firstAttribute="height" constant="300" id="APo-HM-UrH"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="hos-cI-BLn" firstAttribute="centerX" secondItem="xqS-aY-hqb" secondAttribute="centerX" id="4eW-IO-cKU"/>
+                                            <constraint firstItem="hos-cI-BLn" firstAttribute="centerY" secondItem="xqS-aY-hqb" secondAttribute="centerY" id="YUB-iQ-DSJ"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="search" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSG-D7-4vH">
+                                        <rect key="frame" x="0.0" y="315" width="414" height="43"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="f9E-fw-rij" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="3p4-k5-KvI"/>
+                            <constraint firstItem="f9E-fw-rij" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.4" id="BH5-G9-5E0"/>
+                            <constraint firstItem="f9E-fw-rij" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Nkj-Cm-Fcb"/>
+                            <constraint firstItem="f9E-fw-rij" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="eZI-OC-XJD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="storytel_logo" width="1000" height="1000"/>
+    </resources>
+</document>
