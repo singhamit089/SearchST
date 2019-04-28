@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  ItemDetailViewModel.swift
 //  SearchST
 //
 //  Created by Amit  Singh on 28/04/19.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-class HomeViewModel {
+public class ItemDetailViewModel {
     
 }

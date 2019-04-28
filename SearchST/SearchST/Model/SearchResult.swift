@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct SearchResult: Codable {
+public struct SearchResult: Codable {
     
     var query:String?
     var filter:String?
@@ -24,7 +24,7 @@ struct SearchResult: Codable {
         case items
     }
     
-    init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         query = try values.decodeIfPresent(String.self, forKey: .query)
         filter = try values.decodeIfPresent(String.self, forKey: .filter)

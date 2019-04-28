@@ -11,7 +11,7 @@ import RxSwift
 
 class HomeViewController: UIViewController {
 
-    var viewModel:HomeViewModel!
+    var viewModel:SearchItemViewModel!
     private let disposeBag = DisposeBag()
     private var tableView: UITableView!
     

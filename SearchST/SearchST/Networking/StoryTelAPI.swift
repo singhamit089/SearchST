@@ -15,12 +15,6 @@ public enum StoryTel {
     case ItemSearch(query: String, page: Int)
 }
 
-private extension String {
-    var urlEscaped: String {
-        return addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
-    }
-}
-
 extension StoryTel: TargetType {
     public var baseURL: URL {
         return URL(string: "https://api.storytel.net")!
@@ -93,5 +87,8 @@ let requestClosure = { (endpoint: Endpoint, done: MoyaProvider.RequestResultClos
     }
 }
 
-
-
+private extension String {
+    var urlEscaped: String {
+        return addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
+    }
+}

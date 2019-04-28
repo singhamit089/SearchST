@@ -16,12 +16,17 @@
 		6DD108C82275B24500478B4C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD108C72275B24500478B4C /* AppCoordinator.swift */; };
 		6DD108CA2275B60600478B4C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD108C92275B60600478B4C /* HomeViewController.swift */; };
 		6DD108CC2275B61C00478B4C /* HomeViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD108CB2275B61C00478B4C /* HomeViewCoordinator.swift */; };
-		6DD108CE2275B7A600478B4C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD108CD2275B7A600478B4C /* HomeViewModel.swift */; };
+		6DD108CE2275B7A600478B4C /* SearchItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD108CD2275B7A600478B4C /* SearchItemViewModel.swift */; };
 		6DD108D12275BD0300478B4C /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD108D02275BD0300478B4C /* SearchResult.swift */; };
 		6DD108D42275BD3300478B4C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD108D32275BD3300478B4C /* Item.swift */; };
 		6DD108D62275C52300478B4C /* StoryTelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD108D52275C52300478B4C /* StoryTelAPI.swift */; };
 		6DD108D92275CE4800478B4C /* StubResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD108D82275CE4800478B4C /* StubResponse.swift */; };
 		6DD108DA2275CEAC00478B4C /* StubResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD108D82275CE4800478B4C /* StubResponse.swift */; };
+		6DD108DC2275D36A00478B4C /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD108DB2275D36A00478B4C /* Utilities.swift */; };
+		6DD108DF2275D5BC00478B4C /* ItemDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD108DE2275D5BC00478B4C /* ItemDetailViewModel.swift */; };
+		6DD108E12275D77C00478B4C /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD108E02275D77C00478B4C /* ActivityIndicator.swift */; };
+		6DD108E32275D8C900478B4C /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD108E22275D8C900478B4C /* APIManager.swift */; };
+		6DD108E52275DA6100478B4C /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD108E42275DA6100478B4C /* Protocols.swift */; };
 		EDAD7562EC5DADBEA5AE8448 /* Pods_SearchSTTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFFA351FA8C64943BE7D607 /* Pods_SearchSTTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,11 +57,16 @@
 		6DD108C72275B24500478B4C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		6DD108C92275B60600478B4C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		6DD108CB2275B61C00478B4C /* HomeViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCoordinator.swift; sourceTree = "<group>"; };
-		6DD108CD2275B7A600478B4C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewModel.swift; path = ../HomeViewModel.swift; sourceTree = "<group>"; };
+		6DD108CD2275B7A600478B4C /* SearchItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchItemViewModel.swift; path = ../SearchItemViewModel.swift; sourceTree = "<group>"; };
 		6DD108D02275BD0300478B4C /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		6DD108D32275BD3300478B4C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		6DD108D52275C52300478B4C /* StoryTelAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryTelAPI.swift; sourceTree = "<group>"; };
 		6DD108D82275CE4800478B4C /* StubResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubResponse.swift; sourceTree = "<group>"; };
+		6DD108DB2275D36A00478B4C /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		6DD108DE2275D5BC00478B4C /* ItemDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewModel.swift; sourceTree = "<group>"; };
+		6DD108E02275D77C00478B4C /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		6DD108E22275D8C900478B4C /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		6DD108E42275DA6100478B4C /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		7FE43AB691AB722A623F889E /* Pods-SearchST.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchST.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SearchST/Pods-SearchST.debug.xcconfig"; sourceTree = "<group>"; };
 		C08FA5B08F61B70D853448C2 /* Pods-SearchSTTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchSTTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SearchSTTests/Pods-SearchSTTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,6 +131,7 @@
 				6DD108C42275B20000478B4C /* Coordinators */,
 				6DD108C52275B22000478B4C /* ViewControllers */,
 				6DD108D72275C52700478B4C /* Networking */,
+				6DD108DD2275D38200478B4C /* Helpers */,
 				6DD108BF2275AD2A00478B4C /* SupportFiles */,
 			);
 			path = SearchST;
@@ -175,7 +186,8 @@
 		6DD108CF2275B7B500478B4C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				6DD108CD2275B7A600478B4C /* HomeViewModel.swift */,
+				6DD108CD2275B7A600478B4C /* SearchItemViewModel.swift */,
+				6DD108DE2275D5BC00478B4C /* ItemDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -192,9 +204,20 @@
 		6DD108D72275C52700478B4C /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				6DD108E22275D8C900478B4C /* APIManager.swift */,
 				6DD108D52275C52300478B4C /* StoryTelAPI.swift */,
+				6DD108E02275D77C00478B4C /* ActivityIndicator.swift */,
+				6DD108E42275DA6100478B4C /* Protocols.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		6DD108DD2275D38200478B4C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6DD108DB2275D36A00478B4C /* Utilities.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		B7FA4D0F97316C6E8944CE12 /* Frameworks */ = {
@@ -320,6 +343,7 @@
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -330,6 +354,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -415,15 +440,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DD108E52275DA6100478B4C /* Protocols.swift in Sources */,
 				6DD108CC2275B61C00478B4C /* HomeViewCoordinator.swift in Sources */,
 				6DD108D12275BD0300478B4C /* SearchResult.swift in Sources */,
-				6DD108CE2275B7A600478B4C /* HomeViewModel.swift in Sources */,
+				6DD108DC2275D36A00478B4C /* Utilities.swift in Sources */,
+				6DD108CE2275B7A600478B4C /* SearchItemViewModel.swift in Sources */,
+				6DD108E12275D77C00478B4C /* ActivityIndicator.swift in Sources */,
 				6DD108C82275B24500478B4C /* AppCoordinator.swift in Sources */,
+				6DD108E32275D8C900478B4C /* APIManager.swift in Sources */,
 				6DD108DA2275CEAC00478B4C /* StubResponse.swift in Sources */,
 				6DD108D42275BD3300478B4C /* Item.swift in Sources */,
 				6DD108C32275B1AC00478B4C /* BaseCoordinator.swift in Sources */,
 				6DD108D62275C52300478B4C /* StoryTelAPI.swift in Sources */,
 				6DD108A02275A67900478B4C /* AppDelegate.swift in Sources */,
+				6DD108DF2275D5BC00478B4C /* ItemDetailViewModel.swift in Sources */,
 				6DD108CA2275B60600478B4C /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Item: Codable {
+public struct Item: Codable {
     var id:String!
     var title:String?
     var originalTitle:String?
@@ -25,7 +25,7 @@ struct Item: Codable {
         case seriesInfo
     }
     
-    init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         id = try values.decodeIfPresent(String.self, forKey: .id)
         title = try values.decodeIfPresent(String.self, forKey: .title)

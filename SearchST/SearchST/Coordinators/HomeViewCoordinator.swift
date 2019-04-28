@@ -19,7 +19,7 @@ class HomeViewCoordinator: BaseCoordinator<Void> {
     
     override func start() -> Observable<Void> {
         
-        let viewModel = HomeViewModel()
+        let viewModel = SearchItemViewModel()
         let viewController = HomeViewController()
         let navigationController = UINavigationController(rootViewController: viewController)
         
