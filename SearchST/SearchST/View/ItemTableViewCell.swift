@@ -31,8 +31,22 @@ class ItemTableViewCell: UITableViewCell, LoadableFromNib {
         // Configure the view for the selected state
     }
     
-    func configure() {
+    func configure(title:String,authors:[String],narators:[String]) {
+        self.itemTitleLabel.text = title
         
+        var authorsString = ""
+        var naratorString = ""
+        
+        _ = authors.map { text in
+            authorsString += " \(text),"
+        }
+        
+        _ = narators.map { text in
+            naratorString += " \(text),"
+        }
+    
+        self.authorsLabel.text = "\(authorsString.dropLast())"
+        self.narratorsLabel.text = "\(naratorString.dropLast())"
     }
     
 }

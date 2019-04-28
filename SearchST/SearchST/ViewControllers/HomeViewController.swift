@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 import RxDataSources
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UITableViewDelegate {
 
     private let disposeBag = DisposeBag()
     private var tableView: UITableView!
@@ -27,6 +27,17 @@ class HomeViewController: UIViewController {
     }
     
     func bind() {
+        
+        let dataSource = RxTableViewSectionedReloadDataSource<SectionModel<String,Item>>(
+            configureCell: { _, _, _, item in
+                
+                guard let cell:ItemTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: ItemTableViewCell.identifier) as? ItemTableViewCell else {
+                    fatalError("Table view cell specified could not be found.")
+                }
+                cell.configure(title: item.title ?? "", authors: [], narators: [])
+                return cell
+        }
+        )
         
         searchController.searchBar.rx.text.asDriver(onErrorJustReturn: "")
             .map { [weak self] text in
@@ -47,6 +58,11 @@ class HomeViewController: UIViewController {
             .subscribe(onNext: tableView.deselectRow)
             .disposed(by: disposeBag)
         
+        viewModel.outputs.elements.asDriver()
+            .map { [SectionModel(model: "SearchResult", items: $0)] }
+            .drive(tableView.rx.items(dataSource: dataSource))
+            .disposed(by: disposeBag)
+        
         viewModel.isLoading
             .drive()
             // .drive(isLoading(for: self.view))
@@ -60,6 +76,10 @@ class HomeViewController: UIViewController {
             }
             .disposed(by: disposeBag)
 
+        tableView.rx.modelSelected(Item.self)
+            .subscribe(onNext: { item in
+                self.viewModel.inputs.tapped(item: item)
+            }).disposed(by: disposeBag)
         
         viewModel.outputs.selectedViewModel.drive(onNext: { repoViewModel in
             // Navigate to Item Detail VC
@@ -82,6 +102,7 @@ class HomeViewController: UIViewController {
         title = "Search"
         
         tableView = UITableView(frame: UIScreen.main.bounds)
+        
         tableView.rx.setDelegate(self)
             .disposed(by: disposeBag)
         
@@ -104,9 +125,6 @@ class HomeViewController: UIViewController {
             forCellReuseIdentifier: TableHeaderTableViewCell.identifier
         )
         
-        tableView.delegate = self
-        tableView.dataSource = self
-        
         tableFooterView = tableView.dequeueReusableCell(withIdentifier: LoadMoreTableViewCell.identifier) as? LoadMoreTableViewCell
         tableView.tableFooterView = tableFooterView
         
@@ -116,34 +134,5 @@ class HomeViewController: UIViewController {
     
     func updateTableHeaderView(with title:String) {
         tableHeaderView.titleLabel.text = "Query : \(title)"
-    }
-}
-
-extension HomeViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        updateTableHeaderView(with: "Row Tapped == \(indexPath.row+1)")
-    }
-}
-
-extension HomeViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10;
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        guard let cell:ItemTableViewCell = tableView.dequeueReusableCell(withIdentifier: ItemTableViewCell.identifier) as? ItemTableViewCell else {
-            fatalError("Table view cell specified could not be found.")
-        }
-        
-        cell.itemTitleLabel.text = "Harry Potter"
-        cell.authorsLabel.text = "By Amit Singh, Vishnu, Gopal"
-        cell.narratorsLabel.text = "With Subhash, Narendra Yadav, Sameer"
-        
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
     }
 }
