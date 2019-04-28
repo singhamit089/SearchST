@@ -34,7 +34,11 @@ public class SearchItemViewModel: SearchItemViewModelType, SearchItemViewModelIn
     private var pageIndex: Int = 0
     private var query: String = "harry"
     private var shouldShowMoreLoader:Bool = true
-    private var searchResult:SearchResult?
+    
+    private var searchResult:SearchResult? {
+        didSet { updateNextPageNumber() }
+    }
+    
     private var itemList:[Item]?
     
     init() {
@@ -78,7 +82,6 @@ public class SearchItemViewModel: SearchItemViewModelType, SearchItemViewModelIn
                 return Driver.empty()
             }
             if _isLoading.hashValue == 0 && self.query != "" {
-                self.pageIndex = self.pageIndex + 10
                 return API.sharedAPI.searchItem(self.query, page: self.pageIndex)
                         .trackActivity(isLoading).asDriver(onErrorDriveWith: Driver.empty()).flatMap({ [weak self] searchResult -> Driver<[Item]> in
                         guard let self = self else {
@@ -127,6 +130,10 @@ public class SearchItemViewModel: SearchItemViewModelType, SearchItemViewModelIn
         }).flatMapLatest { item -> Driver<ItemDetailViewModel> in
             return Driver.just(ItemDetailViewModel())
         }
+    }
+    
+    func updateNextPageNumber() {
+        self.pageIndex = Int(self.searchResult?.nextPage ?? "0") ?? 0
     }
     
     let item = BehaviorRelay<Item?>(value: nil)
