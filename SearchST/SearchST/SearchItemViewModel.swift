@@ -33,13 +33,10 @@ public class SearchItemViewModel: SearchItemViewModelType, SearchItemViewModelIn
     private let error = PublishSubject<Error>()
     private var pageIndex: Int = 0
     private var query: String = "harry"
-    private var shouldShowMoreLoader:Bool = true
     
     private var searchResult:SearchResult? {
         didSet { updateNextPageNumber() }
     }
-    
-    private var itemList:[Item]?
     
     init() {
         selectedViewModel = Driver.empty()
