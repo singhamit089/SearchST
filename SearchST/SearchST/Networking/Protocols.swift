@@ -11,5 +11,5 @@ import RxCocoa
 import RxSwift
 
 public protocol StoryTelAPI {
-    func searchItem(_ keyword: String, page: Int) -> Single<[Item]>
+    func searchItem(_ keyword: String, page: Int) -> Single<SearchResult>
 }

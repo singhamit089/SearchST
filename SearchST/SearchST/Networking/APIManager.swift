@@ -15,17 +15,13 @@ public class API: StoryTelAPI {
     
     static let sharedAPI = API()
     
-    public func searchItem(_ keyword: String, page: Int) -> Single<[Item]> {
+    public func searchItem(_ keyword: String, page: Int) -> Single<SearchResult> {
         
         return StorytelProvider.rx.request(StoryTel.ItemSearch(query: keyword, page: page))
             .map(SearchResult.self)
             .observeOn(MainScheduler.instance)
-            .flatMap({ searchResult -> Single<[Item]> in
-                
-                guard let items = searchResult.items else {
-                    return Single.just([])
-                }
-                return Single.just(items)
+            .flatMap({ searchResult -> Single<SearchResult> in
+                return Single.just(searchResult)
             })
     }
 }

@@ -19,11 +19,8 @@ class HomeViewCoordinator: BaseCoordinator<Void> {
     
     override func start() -> Observable<Void> {
         
-        let viewModel = SearchItemViewModel()
         let viewController = HomeViewController()
         let navigationController = UINavigationController(rootViewController: viewController)
-        
-        viewController.viewModel = viewModel
         
         window.rootViewController = navigationController
         window.makeKeyAndVisible()

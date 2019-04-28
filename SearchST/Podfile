@@ -10,6 +10,8 @@ target 'SearchST' do
     pod 'RxCocoa'
     pod 'RxSwift'
     pod 'SVProgressHUD'
+    pod 'RxDataSources'
+    pod 'SDWebImage'
 
   target 'SearchSTTests' do
     inherit! :search_paths

@@ -33,6 +33,9 @@ public class SearchItemViewModel: SearchItemViewModelType, SearchItemViewModelIn
     private let error = PublishSubject<Error>()
     private var pageIndex: Int = 0
     private var query: String = "harry"
+    private var shouldShowMoreLoader:Bool = true
+    private var searchResult:SearchResult?
+    private var itemList:[Item]?
     
     init() {
         selectedViewModel = Driver.empty()
@@ -54,7 +57,19 @@ public class SearchItemViewModel: SearchItemViewModelType, SearchItemViewModelIn
                 self.pageIndex = 0
                 self.elements.accept([])
                 self.query = query!
-                return API.sharedAPI.searchItem(query!, page: self.pageIndex).trackActivity(isLoading).asDriver(onErrorDriveWith: Driver.empty())
+                return API.sharedAPI.searchItem(query!, page: self.pageIndex).trackActivity(isLoading).asDriver(onErrorDriveWith: Driver.empty()).flatMap({ [weak self] searchResult -> Driver<[Item]> in
+                    guard let self = self else {
+                        return Driver.empty()
+                    }
+                    
+                    self.searchResult = searchResult
+                    
+                    guard let items = searchResult.items else {
+                        return Driver.empty()
+                    }
+                    
+                    return Single.just(items).asDriver(onErrorJustReturn: [])
+                })
         }
         
         let nextPageRequest = isLoading.asObservable().sample(loadNextPageTrigger).flatMap { [weak self] _isLoading -> Driver<[Item]> in
@@ -65,8 +80,19 @@ public class SearchItemViewModel: SearchItemViewModelType, SearchItemViewModelIn
             if _isLoading.hashValue == 0 && self.query != "" {
                 self.pageIndex = self.pageIndex + 10
                 return API.sharedAPI.searchItem(self.query, page: self.pageIndex)
-                        .trackActivity(isLoading)
-                        .asDriver(onErrorJustReturn: [])
+                        .trackActivity(isLoading).asDriver(onErrorDriveWith: Driver.empty()).flatMap({ [weak self] searchResult -> Driver<[Item]> in
+                        guard let self = self else {
+                            return Driver.empty()
+                        }
+                        
+                        self.searchResult = searchResult
+                        
+                        guard let items = searchResult.items else {
+                            return Driver.empty()
+                        }
+                        
+                        return Single.just(items).asDriver(onErrorJustReturn: [])
+                    })
             }
             
             return Driver.empty()
@@ -94,7 +120,7 @@ public class SearchItemViewModel: SearchItemViewModelType, SearchItemViewModelIn
             .disposed(by: disposeBag)
         
         selectedViewModel = item.asDriver().filter({ item -> Bool in
-            guard let id = item?.id else {
+            guard (item?.id) != nil else {
                 return false
             }
             return true
