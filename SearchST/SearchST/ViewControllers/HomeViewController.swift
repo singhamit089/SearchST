@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import RxSwift
 
 class HomeViewController: UIViewController {
 
     var viewModel:HomeViewModel!
+    private let disposeBag = DisposeBag()
+    private var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
