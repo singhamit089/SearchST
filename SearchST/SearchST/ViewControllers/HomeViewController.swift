@@ -86,8 +86,16 @@ class HomeViewController: UIViewController, UITableViewDelegate {
                 self.viewModel.inputs.tapped(item: item)
             }).disposed(by: disposeBag)
         
-        viewModel.outputs.selectedViewModel.drive(onNext: { repoViewModel in
-            // Navigate to Item Detail VC
+        viewModel.outputs.selectedViewModel.drive(onNext: { [weak self] itemDetailViewModel in
+            
+            guard let self = self else {
+                return
+            }
+            
+            let itemDetailViewController = ItemDetailViewController(nibName: ItemDetailViewController.identifier, bundle: nil)
+            itemDetailViewController.viewModel = itemDetailViewModel
+            self.navigationController?.pushViewController(itemDetailViewController, animated: true)
+            
         }).disposed(by: disposeBag)
     }
     

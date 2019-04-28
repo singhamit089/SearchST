@@ -9,5 +9,10 @@
 import Foundation
 
 public class ItemDetailViewModel {
+
+    public var item:Item
     
+    init(item: Item) {
+        self.item = item
+    }
 }

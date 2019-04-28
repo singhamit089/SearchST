@@ -125,7 +125,12 @@ public class SearchItemViewModel: SearchItemViewModelType, SearchItemViewModelIn
             }
             return true
         }).flatMapLatest { item -> Driver<ItemDetailViewModel> in
-            return Driver.just(ItemDetailViewModel())
+            
+            guard let item = item else {
+                return Driver.empty()
+            }
+            
+            return Driver.just(ItemDetailViewModel(item: item))
         }
     }
     
