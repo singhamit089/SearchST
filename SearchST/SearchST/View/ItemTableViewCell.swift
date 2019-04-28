@@ -31,20 +31,20 @@ class ItemTableViewCell: UITableViewCell, LoadableFromNib {
         // Configure the view for the selected state
     }
     
-    func configure(title:String,authors:[String],narators:[String]) {
-        self.itemTitleLabel.text = title
+    func configure(title:String?,authors:[Author]?,narators:[Narrator]?) {
+        self.itemTitleLabel.text = title ?? ""
         
-        var authorsString = ""
-        var naratorString = ""
+        var authorsString = "by "
+        var naratorString = "with "
         
-        _ = authors.map { text in
-            authorsString += " \(text),"
-        }
+        _ =  authors?.map({ author in
+            authorsString += " \(author.name ?? ""),"
+        })
         
-        _ = narators.map { text in
-            naratorString += " \(text),"
-        }
-    
+        _ = narators?.map({ narrator in
+            naratorString += " \(narrator.name ?? ""),"
+        })
+        
         self.authorsLabel.text = "\(authorsString.dropLast())"
         self.narratorsLabel.text = "\(naratorString.dropLast())"
     }

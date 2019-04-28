@@ -34,7 +34,7 @@ class HomeViewController: UIViewController, UITableViewDelegate {
                 guard let cell:ItemTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: ItemTableViewCell.identifier) as? ItemTableViewCell else {
                     fatalError("Table view cell specified could not be found.")
                 }
-                cell.configure(title: item.title ?? "", authors: [], narators: [])
+                cell.configure(title: item.title, authors: item.authors, narators: item.narrators)
                 return cell
         }
         )

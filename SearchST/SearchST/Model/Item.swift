@@ -15,6 +15,8 @@ public struct Item: Codable {
     var type:String?
     var description:String?
     var seriesInfo:String?
+    var authors:[Author]?
+    var narrators:[Narrator]?
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -23,6 +25,8 @@ public struct Item: Codable {
         case type
         case description
         case seriesInfo
+        case authors
+        case narrators
     }
     
     public init(from decoder: Decoder) throws {
@@ -33,5 +37,7 @@ public struct Item: Codable {
         type = try values.decodeIfPresent(String.self, forKey: .type)
         description = try values.decodeIfPresent(String.self, forKey: .description)
         seriesInfo = try values.decodeIfPresent(String.self, forKey: .seriesInfo)
+        authors = try values.decodeIfPresent([Author].self, forKey: .authors)
+        narrators = try values.decodeIfPresent([Narrator].self, forKey: .narrators)
     }
 }
