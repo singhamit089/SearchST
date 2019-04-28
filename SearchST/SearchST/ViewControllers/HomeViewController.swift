@@ -1,5 +1,5 @@
 //
-//  ListViewController.swift
+//  HomeViewController.swift
 //  SearchST
 //
 //  Created by Amit  Singh on 28/04/19.
@@ -8,12 +8,20 @@
 
 import UIKit
 
-class ListViewController: UIViewController {
+class HomeViewController: UIViewController {
 
+    var viewModel:HomeViewModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        let label = UILabel(frame: view.frame)
+        label.text = "Hello Search"
+        label.center = view.center
+        
+        view.addSubview(label)
+        view.bringSubviewToFront(label)
+        view.backgroundColor = .white
     }
     
 
