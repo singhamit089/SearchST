@@ -29,7 +29,10 @@ class SearchItemViewModelSpec: QuickSpec {
             }
             stubJsonPath =  path
             
-            StorytelProvider = MoyaProvider()
+            StorytelProvider = MoyaProvider<StoryTel>(
+                stubClosure: MoyaProvider.immediatelyStub,
+                plugins: [NetworkLoggerPlugin(verbose: true, responseDataFormatter: JSONResponseDataFormatter)]
+            )
             
             scheduler = TestScheduler(initialClock: 0)
             SharingScheduler.mock(scheduler: scheduler, action: {
@@ -45,7 +48,7 @@ class SearchItemViewModelSpec: QuickSpec {
             disposeBag = nil
         }
         
-        xit("returns ten items when queried") {
+        it("returns ten items when queried") {
             
             let observer = scheduler.createObserver([Item].self)
             
@@ -61,7 +64,7 @@ class SearchItemViewModelSpec: QuickSpec {
             
             scheduler.start()
             
-            let results = observer.events.first.map { event in
+            let results = observer.events.last.map { event in
                 event.value.element!.count
             }
             
